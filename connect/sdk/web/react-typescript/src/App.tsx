@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   const { open } = useCreateSession({
-    linkToken: 'link_656a3e66e65635a3bd43b6955ffa965a',
+    linkToken: 'link_84d936e5e1fb9dc7929711749d154be2',
     onSuccess: (session) => {
       console.log(session)
     },
