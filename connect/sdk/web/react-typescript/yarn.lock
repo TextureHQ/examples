@@ -427,10 +427,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@texturehq/connect-sdk@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@texturehq/connect-sdk/-/connect-sdk-0.0.3.tgz#a5227c2b9d91d9972fe5bb02fde33fd5361facf1"
-  integrity sha512-wzIhr+nExCvqk7rGR3yRcHRy0wVvuTDYL2vGcgE67k28OnmpwEkoAHFnSP9HE1ZO2mXL8P0gQRKabyFCWtf9/A==
+"@texturehq/connect-sdk@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@texturehq/connect-sdk/-/connect-sdk-0.0.4.tgz#1439862a787b3fa4de1ba0c2d2be54cfd2d86cf0"
+  integrity sha512-bCDMgkrqsyTz9pmW5jvtCe5u0BKrNlER96TdHvnwotE9sbHFFbGoz4Wmkpruzhsm8i5EXAbVoSP2lWRy+KBdEg==
 
 "@types/json-schema@^7.0.12":
   version "7.0.12"
