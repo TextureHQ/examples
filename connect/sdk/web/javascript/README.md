@@ -1,6 +1,6 @@
-# Connect SDK React Example
+# Connect SDK Javascript Example
 
-This example demonstrates how to use the [Connect Web SDK](https://www.npmjs.com/package/@texturehq/connect-sdk) in a sample web application that is written in Typescript and leverages React.
+This example demonstrates how to use the [Connect Web SDK](https://www.npmjs.com/package/@texturehq/connect-sdk) in a sample web application that is written using Javascript.
 
 More information can also be found in our [docs](https://docs.texture.energy/connect).
 
