@@ -427,10 +427,17 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@texturehq/connect-sdk@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@texturehq/connect-sdk/-/connect-sdk-0.0.4.tgz#1439862a787b3fa4de1ba0c2d2be54cfd2d86cf0"
-  integrity sha512-bCDMgkrqsyTz9pmW5jvtCe5u0BKrNlER96TdHvnwotE9sbHFFbGoz4Wmkpruzhsm8i5EXAbVoSP2lWRy+KBdEg==
+"@texturehq/connect-sdk@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@texturehq/connect-sdk/-/connect-sdk-0.2.0.tgz#6f306d33e50cc239595d36ae7d9204b999aff056"
+  integrity sha512-YvhhR1b8OsRiRbmaVscpWvQWi1Z4HVM6X9LWPMlnAQj4DyHEczHE7TU2is7pOk0mYGTrKXm6t5ZvheVRD/XmXQ==
+
+"@texturehq/react-connect-sdk@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@texturehq/react-connect-sdk/-/react-connect-sdk-0.0.3.tgz#462e1a9bca17f44fa69aecd82a8364abf6bc7fd4"
+  integrity sha512-9tjDlUjcfmaFWY+eYF8WG1Zv39ALtYY3qHTABd92QuPES8iJ5H2/KxudRx3+WBa2ldzB3B4PUSRiYPCmJd51nw==
+  dependencies:
+    "@texturehq/connect-sdk" "^0.2.0"
 
 "@types/json-schema@^7.0.12":
   version "7.0.12"
