@@ -1,30 +1,17 @@
-import { createSession } from "@texturehq/connect-sdk";
+import { createConnectSession } from "@texturehq/connect-sdk";
 
 const apiKey = import.meta.env.VITE_API_KEY;
-const textureApiUrl = "https://api.texture.energy";
-
-async function createLinkSession() {
-  const response = await fetch(`${textureApiUrl}/v1/connections`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "x-api-key": apiKey,
-    },
-    body: JSON.stringify({
-      referenceId: "connect-sdk-example",
-      clientName: "Connect SDK Example",
-    }),
-  });
-  const responseJSON = await response.json();
-  return responseJSON.linkToken;
-}
 
 export async function setupTexture(element) {
-  const linkToken = await createLinkSession();
-  const texture = createSession({
-    linkToken,
-    onSuccess: ({ scopedToken }) => {
-      console.log(scopedToken);
+  const texture = createConnectSession({
+    connectApiKey: apiKey,
+    connectOptions: {
+      referenceId: "connect-sdk-example",
+      clientName: "Connect SDK Example",
+      tags: ["connect-sdk-example"],
+    },
+    onSuccess: ({ scopedKey }) => {
+      console.log(scopedKey);
     },
     onError({ type, reason }) {
       console.error(type, reason);
