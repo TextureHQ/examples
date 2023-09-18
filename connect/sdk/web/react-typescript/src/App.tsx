@@ -11,8 +11,8 @@ function App() {
       clientName: "Connect SDK Example",
       tags: ["connect-sdk-example"],
     },
-    onSuccess: (session) => {
-      console.log(session);
+    onSuccess: ({ scopedKey }) => {
+      console.log(scopedKey);
     },
     onError: ({ type, reason }) => {
       console.error(type, reason);
