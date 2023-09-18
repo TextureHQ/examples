@@ -1,13 +1,11 @@
 import { useCreateConnectSession } from "@texturehq/react-connect-sdk";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
-const apiKey = import.meta.env.VITE_API_KEY;
+const connectApiKey = import.meta.env.VITE_CONNECT_API_KEY;
 
 function App() {
   const { open } = useCreateConnectSession({
-    connectApiKey: apiKey,
+    connectApiKey,
     connectOptions: {
       referenceId: "connect-sdk-example",
       clientName: "Connect SDK Example",
@@ -22,20 +20,18 @@ function App() {
   });
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => open()}>Open Texture</button>
-      </div>
-    </>
+    <div>
+      <button
+        onClick={() =>
+          open({
+            width: 480,
+            height: 640,
+          })
+        }
+      >
+        Connect device(s) with Texture
+      </button>
+    </div>
   );
 }
 

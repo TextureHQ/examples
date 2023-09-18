@@ -1,24 +1,33 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupTexture } from './texture.js'
+import "./style.css";
+import { createConnectSession } from "@texturehq/connect-sdk";
 
-document.querySelector('#app').innerHTML = `
+const connectApiKey = import.meta.env.VITE_CONNECT_API_KEY;
+
+const texture = createConnectSession({
+  connectApiKey,
+  connectOptions: {
+    referenceId: "connect-sdk-example",
+    clientName: "Connect SDK Example",
+    tags: ["connect-sdk-example"],
+  },
+  onSuccess: ({ scopedKey }) => {
+    console.log(scopedKey);
+  },
+  onError({ type, reason }) {
+    console.error(type, reason);
+  },
+});
+
+document.querySelector("#app").innerHTML = `
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button">Connect with Texture</button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
+      <button id="texture-connect" type="button">Connect device(s) with Texture</button>
   </div>
-`
+`;
 
-setupTexture(document.querySelector('#counter'))
+const textureConnectButton = document.querySelector("#texture-connect");
+textureConnectButton.addEventListener("click", () =>
+  texture.open({
+    width: 480,
+    height: 640,
+  })
+);

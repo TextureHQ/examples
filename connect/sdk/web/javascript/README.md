@@ -2,7 +2,7 @@
 
 This example demonstrates how to use the [Connect Web SDK](https://www.npmjs.com/package/@texturehq/connect-sdk) in a sample web application that is written using Javascript.
 
-More information can also be found in our [docs](https://docs.texture.energy/connect).
+More information can also be found in our [docs](https://docs.texture.energy/docs/connect).
 
 ## Running the example
 
@@ -25,3 +25,7 @@ preview/serve build:
 ```bash
 npm run preview
 ```
+
+## Using your own Connect API Key
+
+To use your own Connect API Key with this example, you can set the `VITE_CONNECT_API_KEY` environment variable to your API Key. This can be done by creating a `.env` file in the root of this example and setting the variable there. An example `.env` file is provided in this example as `.env.example`.
