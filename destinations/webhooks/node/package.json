@@ -1,0 +1,16 @@
+{
+  "name": "webhooks",
+  "version": "1.0.0",
+  "description": "A simple sample application to show how to handle the webhook Stream Destination on the Texture Platform",
+  "main": "server.js",
+  "repository": "https://github.com/TextureHQ/examples",
+  "author": "Victor Quinn <victor@texture.energy>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
