@@ -5,7 +5,7 @@ url = "https://api.texture.energy/v1/connections"
 
 # The header to include with the request
 headers = {
-    "x-api-key": "<your-secret-api-key-here>",
+    "Texture-Api-Key": "<your-secret-api-key-here>",
     "Content-Type": "application/json",
 }
 

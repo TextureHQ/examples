@@ -10,7 +10,7 @@ fetch("https://api.texture.energy/v1/connections", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
-    "x-api-key": apiKey,
+    "Texture-Api-Key": apiKey,
   },
   body: JSON.stringify({
     referenceId: "9bb290c8-fe97-46ce-92a8-952823164277", // A unique ID in your system for this connection
