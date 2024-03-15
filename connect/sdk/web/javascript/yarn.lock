@@ -112,10 +112,10 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.18.20.tgz#786c5f41f043b07afb1af37683d7c33668858f6d"
   integrity sha512-kTdfRcSiDfQca/y9QIkng02avJ+NCaQvrMejlsB3RRv5sE9rRoeBPISaZpKxHELzRxZyLvNts1P27W3wV+8geQ==
 
-"@texturehq/connect-sdk@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@texturehq/connect-sdk/-/connect-sdk-0.2.0.tgz#6f306d33e50cc239595d36ae7d9204b999aff056"
-  integrity sha512-YvhhR1b8OsRiRbmaVscpWvQWi1Z4HVM6X9LWPMlnAQj4DyHEczHE7TU2is7pOk0mYGTrKXm6t5ZvheVRD/XmXQ==
+"@texturehq/connect-sdk@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@texturehq/connect-sdk/-/connect-sdk-0.5.0.tgz#033153901f5c351bf0ad042410613880513d74e6"
+  integrity sha512-JBy9bnQm8C5OyAsYDOJhrlWwu9NSz39ls2Kt8Xm+eQmcP2DSoS8DmUVcIDjQP2GRGG6XcNBqP9R5wCCWt6i3Xg==
 
 esbuild@^0.18.10:
   version "0.18.20"
