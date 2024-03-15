@@ -10,7 +10,7 @@ We do a few things in this example:
 2. We create a route that listens for POST requests to `/webhook` and logs the request body to the console.
 3. This route not only listens for and logs the request, but also performs validation on the request body to ensure that it is a valid Texture Webhook request.
 
-For more details on Webhook Destinations, see the [Webhooks documentation](https://docs.texture.energy/docs/streams/destinations/webhooks).
+For more details on Webhook Destinations, see the [Webhooks documentation](https://docs.texturehq.com/docs/streams/destinations/webhooks).
 
 ## Getting Started
 
