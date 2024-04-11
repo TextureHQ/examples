@@ -10,6 +10,7 @@ function App() {
       referenceId: "connect-sdk-example",
       clientName: "Connect SDK Example",
       tags: ["connect-sdk-example"],
+      manufacturerFilters: { manufacturers: ['honeywell', 'daikin'] },
     },
     onSuccess: ({ scopedKey }) => {
       console.log(scopedKey);
