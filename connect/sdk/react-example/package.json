@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@texturehq/react-connect-sdk": "^0.2.0",
+    "@texturehq/react-connect-sdk": "^0.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
