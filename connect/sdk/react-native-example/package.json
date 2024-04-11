@@ -9,7 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@texturehq/react-native-connect-sdk": "^0.1.0",
+    "@texturehq/react-native-connect-sdk": "^0.2.0",
     "expo": "~50.0.14",
     "expo-dev-client": "~3.3.11",
     "expo-status-bar": "~1.11.1",

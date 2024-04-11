@@ -13,6 +13,7 @@ export default function App() {
             clientName: 'Texture Connect',
             referenceId: '123',
             redirectUrl: 'exp+react-native-example://',
+            manufacturerFilters: { manufacturers: ['honeywell', 'daikin'] },
           }}
           onError={(type, reason) => console.log(type, reason)}
           onSuccess={(scopedKey) => console.log("Texture Scoped Key", scopedKey)}
