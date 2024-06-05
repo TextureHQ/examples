@@ -15,7 +15,12 @@ data = {
     "redirectUrl": "http://localhost:8000",  # The URL to redirect to after the user has connected
     "tags": ["banana", "strawberry"],  # The tags to group devices by
     "clientName": "Energy Demo",  # The name of your application
-    "email": "person@gmail.com",  # The email address of the user to connect
+    "customerInfo": {
+        "email": "example@example.com", # The email address of the user to connect
+        "phone": "5555555555", # The phone number of the user to connect
+        "firstName": "John", # The first name of the user to connect
+        "lastName": "Doe", # The last name of the user to connect
+    },
 }
 
 # Make the POST request
