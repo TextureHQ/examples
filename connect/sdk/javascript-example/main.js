@@ -14,6 +14,7 @@ const texture = createConnectSession({
   onSuccess: ({ scopedKey }) => {
     console.log(scopedKey);
   },
+
   onError({ type, reason }) {
     console.error(type, reason);
   },
