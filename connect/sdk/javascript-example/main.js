@@ -9,7 +9,13 @@ const texture = createConnectSession({
     referenceId: "connect-sdk-example",
     clientName: "Connect SDK Example",
     tags: ["connect-sdk-example"],
-    manufacturerFilters: { manufacturers: ['honeywell', 'daikin'] },
+    manufacturerFilters: { manufacturers: ["honeywell", "daikin"] },
+    customerInfo: {
+      email: "example@example.com",
+      phone: "5555555555",
+      firstName: "John",
+      lastName: "Doe",
+    },
   },
   onSuccess: ({ scopedKey }) => {
     console.log(scopedKey);
@@ -28,7 +34,7 @@ document.querySelector("#app").innerHTML = `
 const textureConnectButton = document.querySelector("#texture-connect");
 textureConnectButton.addEventListener("click", () =>
   texture.open({
-    width: 480,
-    height: 640,
+    width: 600,
+    height: 800,
   })
 );
