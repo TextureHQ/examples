@@ -12,6 +12,6 @@
     "vite": "^4.5.2"
   },
   "dependencies": {
-    "@texturehq/connect-sdk": "^0.6.0"
+    "@texturehq/connect-sdk": "^0.8.0"
   }
 }
