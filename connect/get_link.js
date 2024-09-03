@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
-const textureApiUrl = "https://api.texture.energy";
+const textureApiUrl = "https://api.texturehq.com";
 const apiKey = process.env.TEXTURE_API_KEY || "<your-api-key-goes-here>";
 
 console.log(`Using API key: ${apiKey}`);
 
 // Node v18 has fetch built in
-fetch("https://api.texturehq.com/v1/connections", {
+fetch(`${textureApiUrl}/v1/connections`, {
   method: "POST",
   headers: {
     "Content-Type": "application/json",

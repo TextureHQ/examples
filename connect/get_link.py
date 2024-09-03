@@ -1,7 +1,7 @@
 import requests
 
 # URL to POST to
-url = "https://api.texture.energy/v1/connections"
+url = "https://api.texturehq.com/v1/connections"
 
 # The header to include with the request
 headers = {
